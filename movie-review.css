@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body::after{
+    height: 100%;
+    padding-top: 60px;
+}
+.wrap{
+    max-width: 980px;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+header{
+    display: flex;
+    padding: 5px;
+    width: 90%;
+    max-width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    background-color: beige;
+}
+
+header .logo img{
+    height: 4vh;
+}
+.logo , .title, nav, button{
+    flex: 1;
+}
+header nav ul{
+    list-style-type: none;
+    display: inline-flex;
+    
+}
+header nav ul li{
+    margin: 0 0 0 10px;
+    height: 100%;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header button{
+    border-radius: 5px;
+    animation: effect 5s linear infinite;
+    border: 1px solid black;
+    outline: none;
+}
+header button a{
+    text-decoration: none;
+    color: black;
+    font-weight:800;
+    
+}
+.blog1{
+    width: 90%;
+    margin: 20px auto;
+    padding: 5px;
+}
+.div1{
+    margin: 5px auto;
+    padding: 5px;
+    
+}
+.div1 h1{
+    text-align: center;
+    font-weight: lighter;
+}
+.div1 p{
+    
+    word-spacing: .09em;
+    font-size: 18px;
+    margin: auto;
+}
+
+.div2{
+    margin: 5px auto;
+    padding: 5px;
+}
+.div2 h1{
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+.div2 table{
+    border-collapse: collapse;
+    width: 100%;
+   
+}
+.div2 table td{
+    text-align: center;   
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+.div2 table tr:hover{
+    background-color: burlywood;
+    
+    font-weight: bold;
+    
+}
+.div2 table th{
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    height: 25px;
+}
+
+
+
+
+
+@media  screen and (max-width:600px) {
+    header{
+        display: block;
+        text-align: center;
+    }
+    .div1 p{
+        word-spacing: .09em;
+        font-size: 16px;
+        margin: auto;
+        text-align: left;
+    }
+    
+}
+
+
+
+
+
+
+
+@keyframes effect{
+    0%{
+        background-color: darkturquoise;
+    }
+    25%{
+        background-color: lightcyan;
+    }
+    100%{
+        background-color: fuchsia;
+    }
+}
+
+
+
